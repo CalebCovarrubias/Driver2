@@ -1,9 +1,12 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_home2.*
 
 enum class ProviderType {
     BASIC
@@ -21,7 +24,26 @@ class HomeActivity : AppCompatActivity() {
         val provider = bundle?.getString("provider")
         setup(email?: "", provider ?: "")
 
+        servbutton.setOnClickListener(){
+            val homeIntent = Intent(this,Home2Activity::class.java).apply {
+                putExtra("email", email)
+
+            }
+            startActivity(homeIntent)
+        }
+
+
+
+
     }
+
+
+
+
+
+
+
+
 
     private fun setup(email: String, provider: String){
 
@@ -34,4 +56,8 @@ class HomeActivity : AppCompatActivity() {
 
 
     }
+
+
+
+
 }

@@ -4,10 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".Home2Activity">
+
+    <TextView
+        android:id="@+id/emailTextView2"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="44dp"
+        android:text="Nombre de usuario"
+        app:layout_constraintBottom_toTopOf="@+id/mapView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView2"
+        android:id="@+id/mapView3"
         android:layout_width="328dp"
         android:layout_height="330dp"
         android:layout_marginStart="32dp"
@@ -23,38 +35,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/servbutton"
-
-        android:layout_width="167dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="36dp"
-        android:text="Activar Servicio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView"
-        app:layout_constraintVertical_bias="0.0"
-        android:onClick="onClick"
-        />
-
-
-    <TextView
-        android:id="@+id/emailTextView"
-        android:layout_width="174dp"
-        android:layout_height="38dp"
-        android:text="Nombre de usuario"
-        app:layout_constraintBottom_toTopOf="@+id/mapView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/LogOutButton"
+        android:id="@+id/logOutButton"
         android:layout_width="167dp"
         android:layout_height="43dp"
         android:layout_marginStart="32dp"
