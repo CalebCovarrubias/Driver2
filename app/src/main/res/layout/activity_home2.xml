@@ -6,47 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".Home2Activity">
 
+
     <TextView
-        android:id="@+id/emailTextView2"
-        android:layout_width="174dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="44dp"
-        android:text="Nombre de usuario"
-        app:layout_constraintBottom_toTopOf="@+id/mapView2"
+        android:id="@+id/textView11"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Estado : Activo"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView3"
-        android:layout_width="328dp"
-        android:layout_height="330dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="295dp"
+    <TextView
+        android:id="@+id/emailTextView2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Nombre de usuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.21"
+        tools:ignore="UnknownId" />
 
     <Button
         android:id="@+id/logOutButton"
-        android:layout_width="167dp"
-        android:layout_height="43dp"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="136dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="96dp"
         android:text="Cerrar Sesión"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <Button
+        android:id="@+id/takebutton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Tomar Cliente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logOutButton"
+        app:layout_constraintVertical_bias="0.137" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

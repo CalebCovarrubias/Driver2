@@ -25,7 +25,9 @@ class HomeActivity : AppCompatActivity() {
         setup(email?: "", provider ?: "")
 
         servbutton.setOnClickListener(){
+
             val homeIntent = Intent(this,Home2Activity::class.java).apply {
+
                 putExtra("email", email)
 
             }
@@ -47,7 +49,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setup(email: String, provider: String){
 
-        title= "Inicio"
+        title= "Home"
         emailTextView.text = email
         LogOutButton.setOnClickListener{
             FirebaseAuth.getInstance().signOut()
